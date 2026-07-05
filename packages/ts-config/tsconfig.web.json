@@ -1,0 +1,15 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		// Browser environment + React
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"jsx": "react-jsx",
+
+		// Vite
+		"types": ["vite/client"],
+		"allowArbitraryExtensions": true,
+
+		// Only type-level TS syntax (no enums/namespaces/parameter properties)
+		"erasableSyntaxOnly": true
+	}
+}
