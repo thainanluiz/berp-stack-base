@@ -1,0 +1,4 @@
+{
+	"extends": "@berp/ts-config/tsconfig.web.json",
+	"include": ["src", "vite.config.ts"]
+}

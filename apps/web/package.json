@@ -1,0 +1,29 @@
+{
+	"name": "@berp/web",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc --noEmit && vite build",
+		"preview": "vite preview",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"react": "^19.2.7",
+		"react-dom": "^19.2.7"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.29.7",
+		"@berp/ts-config": "workspace:*",
+		"@rolldown/plugin-babel": "^0.2.3",
+		"@types/babel__core": "^7.20.5",
+		"@types/node": "^24.13.2",
+		"@types/react": "^19.2.17",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^6.0.3",
+		"babel-plugin-react-compiler": "^1.0.0",
+		"typescript": "catalog:",
+		"vite": "^8.1.1"
+	}
+}

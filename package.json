@@ -1,15 +1,28 @@
 {
 	"name": "berp-stack",
 	"private": true,
-	"workspaces": [
-		"apps/*",
-		"packages/*"
-	],
+	"workspaces": {
+		"packages": [
+			"apps/*",
+			"packages/*"
+		],
+		"catalog": {
+			"typescript": "~6.0.2"
+		}
+	},
+	"scripts": {
+		"dev": "bun --filter '*' dev",
+		"dev:web": "bun --filter '@berp/web' dev",
+		"build": "bun --filter '*' build",
+		"build:web": "bun --filter '@berp/web' build",
+		"preview:web": "bun --filter '@berp/web' preview",
+		"check": "biome check .",
+		"check:fix": "biome check --write .",
+		"typecheck": "bun --filter '*' typecheck"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.2",
-		"@types/bun": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5"
+		"@types/bun": "^1.3.14",
+		"typescript": "catalog:"
 	}
 }
