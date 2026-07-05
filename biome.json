@@ -58,7 +58,13 @@
 			"style": {
 				"useConst": "error",
 				"useImportType": "error",
-				"noNonNullAssertion": "warn"
+				"noNonNullAssertion": "warn",
+				"useComponentExportOnlyModules": {
+					"level": "error",
+					"options": {
+						"allowConstantExport": true
+					}
+				}
 			}
 		}
 	},
