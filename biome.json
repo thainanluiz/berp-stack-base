@@ -3,24 +3,69 @@
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
-		"useIgnoreFile": true
+		"useIgnoreFile": true,
+		"defaultBranch": "main"
 	},
 	"files": {
-		"ignoreUnknown": false
+		"ignoreUnknown": true,
+		"includes": [
+			"**",
+			"!**/node_modules",
+			"!**/dist",
+			"!**/build",
+			"!**/public",
+			"!**/migrations",
+			"!**/*.tsbuildinfo",
+			"!bun.lock"
+		]
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"indentWidth": 4,
+		"lineWidth": 120,
+		"bracketSameLine": true
 	},
 	"linter": {
 		"enabled": true,
+		"domains": {
+			"react": "recommended",
+			"drizzle": "recommended",
+			"test": "recommended"
+		},
 		"rules": {
-			"preset": "recommended"
+			"preset": "recommended",
+			"complexity": {
+				"noForEach": "error",
+				"noImplicitCoercions": "error",
+				"noUselessStringConcat": "error",
+				"useArrowFunction": "warn"
+			},
+			"correctness": {
+				"noUnusedImports": { "level": "error", "fix": "safe" },
+				"noUnusedVariables": "error",
+				"useExhaustiveDependencies": "error"
+			},
+			"suspicious": {
+				"noExplicitAny": "error",
+				"noConsole": {
+					"level": "warn",
+					"options": {
+						"allow": ["warn", "error", "info"]
+					}
+				}
+			},
+			"style": {
+				"useConst": "error",
+				"useImportType": "error",
+				"noNonNullAssertion": "warn"
+			}
 		}
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"quoteStyle": "single",
+			"semicolons": "asNeeded"
 		}
 	},
 	"assist": {
