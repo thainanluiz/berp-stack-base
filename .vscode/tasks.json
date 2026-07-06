@@ -39,6 +39,24 @@
 			"type": "shell",
 			"command": "bun run typecheck",
 			"problemMatcher": ["$tsc"]
+		},
+		{
+			"label": "db:generate",
+			"type": "shell",
+			"command": "bun run db:generate",
+			"problemMatcher": []
+		},
+		{
+			"label": "db:migrate",
+			"type": "shell",
+			"command": "bun run db:migrate",
+			"problemMatcher": []
+		},
+		{
+			"label": "db:push",
+			"type": "shell",
+			"command": "bun run db:push",
+			"problemMatcher": []
 		}
 	]
 }

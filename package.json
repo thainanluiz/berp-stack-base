@@ -20,6 +20,9 @@
 		"build": "bun --filter '*' build",
 		"build:web": "bun --filter '@berp/web' build",
 		"preview:web": "bun --filter '@berp/web' preview",
+		"db:generate": "bun --filter '@berp/server' db:generate",
+		"db:migrate": "bun --filter '@berp/server' db:migrate",
+		"db:push": "bun --filter '@berp/server' db:push",
 		"check": "biome check .",
 		"check:fix": "biome check --write .",
 		"typecheck": "bun --filter '*' typecheck"
