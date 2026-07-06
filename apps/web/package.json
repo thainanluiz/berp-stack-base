@@ -10,8 +10,11 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
+		"@berp/shared": "workspace:*",
+		"@elysia/eden": "^1.4.10",
 		"react": "^19.2.7",
-		"react-dom": "^19.2.7"
+		"react-dom": "^19.2.7",
+		"zod": "catalog:"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.29.7",
@@ -23,6 +26,7 @@
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react": "^6.0.3",
 		"babel-plugin-react-compiler": "^1.0.0",
+		"elysia": "catalog:",
 		"typescript": "catalog:",
 		"vite": "^8.1.1"
 	}
