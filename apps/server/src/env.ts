@@ -13,7 +13,7 @@ const envSchema = z.object({
 	DATABASE_URL: z.string().url().startsWith('postgresql://'),
 })
 
-const parsed = envSchema.safeParse(Bun.env)
+const parsed = envSchema.safeParse(process.env)
 
 if (!parsed.success) {
 	console.error('❌ Invalid environment variables:', parsed.error.flatten().fieldErrors)
