@@ -1,0 +1,20 @@
+{
+	"name": "@berp/shared",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./server": "./types/server.ts"
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@berp/server": "workspace:*",
+		"@berp/ts-config": "workspace:*",
+		"typescript": "catalog:"
+	}
+}

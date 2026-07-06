@@ -1,0 +1,4 @@
+{
+	"extends": "@berp/ts-config/tsconfig.server.json",
+	"include": ["src"]
+}
