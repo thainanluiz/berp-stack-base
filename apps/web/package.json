@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@berp/shared": "workspace:*",
 		"@elysia/eden": "^1.4.10",
+		"@tanstack/react-router": "^1.170.17",
 		"react": "^19.2.7",
 		"react-dom": "^19.2.7",
 		"zod": "catalog:"
@@ -20,6 +21,7 @@
 		"@babel/core": "^7.29.7",
 		"@berp/ts-config": "workspace:*",
 		"@rolldown/plugin-babel": "^0.2.3",
+		"@tanstack/router-plugin": "1.168.19",
 		"@types/babel__core": "^7.20.5",
 		"@types/node": "catalog:",
 		"@types/react": "^19.2.17",

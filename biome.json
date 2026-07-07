@@ -15,6 +15,7 @@
 			"!**/build",
 			"!**/public",
 			"!**/migrations",
+			"!**/routeTree.gen.ts",
 			"!**/*.tsbuildinfo",
 			"!bun.lock"
 		]
