@@ -41,6 +41,12 @@
 			"problemMatcher": ["$tsc"]
 		},
 		{
+			"label": "test",
+			"type": "shell",
+			"command": "bun run test",
+			"problemMatcher": []
+		},
+		{
 			"label": "db:generate",
 			"type": "shell",
 			"command": "bun run db:generate",

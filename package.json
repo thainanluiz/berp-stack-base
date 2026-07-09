@@ -25,6 +25,7 @@
 		"db:push": "bun --filter '@berp/server' db:push",
 		"check": "biome check .",
 		"check:fix": "biome check --write .",
+		"test": "bun --filter '*' test",
 		"typecheck": "bun --filter '*' typecheck"
 	},
 	"devDependencies": {
