@@ -2,10 +2,38 @@
 	"files.eol": "\n",
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.formatOnSave": true,
+	"editor.formatOnPaste": false,
 	"editor.codeActionsOnSave": {
 		"source.fixAll.biome": "explicit",
 		"source.organizeImports.biome": "explicit"
 	},
-	"typescript.tsdk": "node_modules/typescript/lib",
-	"typescript.enablePromptUseWorkspaceTsdk": true
+	"editor.linkedEditing": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": true,
+	"editor.guides.indentation": true,
+	"editor.suggestSelection": "first",
+	"editor.tabCompletion": "on",
+	"terminal.integrated.suggest.enabled": false,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/node_modules": true,
+		"**/dist": true,
+		"**/build": true
+	},
+	"js/ts.tsdk.path": "node_modules/typescript/lib",
+	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
+	"js/ts.updateImportsOnFileMove.enabled": "always",
+	"js/ts.preferences.organizeImports": {
+		"onSameLine": true,
+		"groupSpecifiers": true,
+		"sortSpecifiers": true,
+		"sortOrder": ["statics", "locals", "inlines", "members"]
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/dist": true,
+		"**/build": true
+	}
 }
