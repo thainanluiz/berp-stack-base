@@ -8,7 +8,13 @@
 	},
 	"files": {
 		"ignoreUnknown": true,
-		"includes": ["apps/*/**/*.ts", "apps/*/**/*.tsx", "packages/*/**/*.ts", "packages/*/**/*.tsx"]
+		"includes": [
+			"apps/*/**/*.ts",
+			"apps/*/**/*.tsx",
+			"packages/*/**/*.ts",
+			"packages/*/**/*.tsx",
+			"!apps/web/src/routeTree.gen.ts"
+		]
 	},
 	"formatter": {
 		"enabled": true,
